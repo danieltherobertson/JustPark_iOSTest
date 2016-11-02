@@ -15,6 +15,7 @@
 		652E97341DCA503D00372C7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652E97321DCA503D00372C7B /* LaunchScreen.storyboard */; };
 		652E973F1DCA503D00372C7B /* JustPark_iOSTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E973E1DCA503D00372C7B /* JustPark_iOSTestTests.swift */; };
 		652E974A1DCA503D00372C7B /* JustPark_iOSTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E97491DCA503D00372C7B /* JustPark_iOSTestUITests.swift */; };
+		652E97581DCA586600372C7B /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E97571DCA586600372C7B /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		652E97451DCA503D00372C7B /* JustPark_iOSTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JustPark_iOSTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		652E97491DCA503D00372C7B /* JustPark_iOSTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustPark_iOSTestUITests.swift; sourceTree = "<group>"; };
 		652E974B1DCA503D00372C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		652E97571DCA586600372C7B /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				652E97261DCA503D00372C7B /* AppDelegate.swift */,
+				652E97571DCA586600372C7B /* NetworkController.swift */,
 				652E97281DCA503D00372C7B /* ViewController.swift */,
 				652E972A1DCA503D00372C7B /* Main.storyboard */,
 				652E97301DCA503D00372C7B /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652E97581DCA586600372C7B /* NetworkController.swift in Sources */,
 				652E972F1DCA503D00372C7B /* JustPark_iOSTest.xcdatamodeld in Sources */,
 				652E97291DCA503D00372C7B /* ViewController.swift in Sources */,
 				652E97271DCA503D00372C7B /* AppDelegate.swift in Sources */,
