@@ -16,6 +16,8 @@
 		652E973F1DCA503D00372C7B /* JustPark_iOSTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E973E1DCA503D00372C7B /* JustPark_iOSTestTests.swift */; };
 		652E974A1DCA503D00372C7B /* JustPark_iOSTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E97491DCA503D00372C7B /* JustPark_iOSTestUITests.swift */; };
 		652E97581DCA586600372C7B /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E97571DCA586600372C7B /* NetworkController.swift */; };
+		659EBAD81DCB72F000884609 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659EBAD71DCB72F000884609 /* MapKit.framework */; };
+		659EBADA1DCB73B100884609 /* SearchLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659EBAD91DCB73B100884609 /* SearchLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		652E97491DCA503D00372C7B /* JustPark_iOSTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustPark_iOSTestUITests.swift; sourceTree = "<group>"; };
 		652E974B1DCA503D00372C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		652E97571DCA586600372C7B /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		659EBAD71DCB72F000884609 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		659EBAD91DCB73B100884609 /* SearchLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659EBAD81DCB72F000884609 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,7 @@
 				652E973D1DCA503D00372C7B /* JustPark_iOSTestTests */,
 				652E97481DCA503D00372C7B /* JustPark_iOSTestUITests */,
 				652E97241DCA503D00372C7B /* Products */,
+				659EBAD61DCB72F000884609 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +110,7 @@
 				652E97261DCA503D00372C7B /* AppDelegate.swift */,
 				652E97571DCA586600372C7B /* NetworkController.swift */,
 				652E97281DCA503D00372C7B /* ViewController.swift */,
+				659EBAD91DCB73B100884609 /* SearchLocation.swift */,
 				652E972A1DCA503D00372C7B /* Main.storyboard */,
 				652E97301DCA503D00372C7B /* Assets.xcassets */,
 				652E97321DCA503D00372C7B /* LaunchScreen.storyboard */,
@@ -129,6 +136,14 @@
 				652E974B1DCA503D00372C7B /* Info.plist */,
 			);
 			path = JustPark_iOSTestUITests;
+			sourceTree = "<group>";
+		};
+		659EBAD61DCB72F000884609 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				659EBAD71DCB72F000884609 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +215,11 @@
 					652E97221DCA503D00372C7B = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					652E97391DCA503D00372C7B = {
 						CreatedOnToolsVersion = 8.0;
@@ -268,6 +288,7 @@
 				652E97581DCA586600372C7B /* NetworkController.swift in Sources */,
 				652E972F1DCA503D00372C7B /* JustPark_iOSTest.xcdatamodeld in Sources */,
 				652E97291DCA503D00372C7B /* ViewController.swift in Sources */,
+				659EBADA1DCB73B100884609 /* SearchLocation.swift in Sources */,
 				652E97271DCA503D00372C7B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +532,7 @@
 				652E97501DCA503D00372C7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		652E97511DCA503D00372C7B /* Build configuration list for PBXNativeTarget "JustPark_iOSTestTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +541,7 @@
 				652E97531DCA503D00372C7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		652E97541DCA503D00372C7B /* Build configuration list for PBXNativeTarget "JustPark_iOSTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +550,7 @@
 				652E97561DCA503D00372C7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,16 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DPl-nc-uqh"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DPl-nc-uqh">
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="WqQ-FO-ZXK"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="DPl-nc-uqh" secondAttribute="leading" id="MP1-a0-R2M"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DPl-nc-uqh" secondAttribute="bottom" constant="20" id="Rwo-l2-Tf7"/>
-                            <constraint firstItem="DPl-nc-uqh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gw5-sk-Vsz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="DPl-nc-uqh" secondAttribute="trailing" id="ib8-Gp-rc6"/>
-                            <constraint firstItem="DPl-nc-uqh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="k5Q-hl-D7w"/>
-                            <constraint firstItem="DPl-nc-uqh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wj4-OR-ydX"/>
+                            <constraint firstItem="DPl-nc-uqh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8bH-8H-5Qv"/>
+                            <constraint firstItem="DPl-nc-uqh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RDG-jl-N3o"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DPl-nc-uqh" secondAttribute="bottom" id="sRf-Kx-NDD"/>
+                            <constraint firstAttribute="trailing" secondItem="DPl-nc-uqh" secondAttribute="trailing" id="vhe-FV-eJf"/>
                         </constraints>
                     </view>
                     <connections>
