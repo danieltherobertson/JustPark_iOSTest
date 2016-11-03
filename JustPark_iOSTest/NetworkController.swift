@@ -30,8 +30,20 @@ class NetworkController: NSObject {
             
             let responseString = String(data: data, encoding: String.Encoding.utf8)
             print("responseString = \(responseString)")
+            let responseJSON = self.convertStringToDictionary(text: responseString!)
          
         }
         task.resume()
+    }
+    
+    func convertStringToDictionary(text: String) -> [String:AnyObject]? {
+        if let data = text.data(using: String.Encoding.utf8) {
+            do {
+                return try JSONSerialization.jsonObject(with: data, options: []) as? [String:AnyObject]
+            } catch let error as NSError {
+                print(error)
+            }
+        }
+        return nil
     }
 }
